@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import MainNavBar from "./components/MainNavBar";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
+import Contact from './components/pages/Contact'
 import "./styles.css";
 import { Route, Switch } from "react-router-dom";
 
@@ -29,9 +30,9 @@ function App() {
           )}
         </div>
         <div>
-          <label class="switch darkMode">
+          <label className="switch darkMode">
             <input type="checkbox" onClick={getDarkMode} />
-            <span class="slider round"></span>
+            <span className="slider round"></span>
           </label>
         </div>
       </div>
@@ -40,6 +41,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
         <Route render={() => <h2>404</h2>} />
       </Switch>
     </div>

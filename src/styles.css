@@ -18,7 +18,7 @@ body{margin:0;}
   top: 0;
   z-index: 3;
   min-height: 500px;
-  background: #424242;
+  background: #286f62;
   color: #EEEEEE;
 }
 
@@ -49,6 +49,7 @@ body{margin:0;}
 
 .navLink:hover {
   font-weight: 700;
+  content:"Casa";
 }
 
 /*Pages General settings*/
@@ -142,16 +143,16 @@ input:checked+.slider:before {
 
 
 .container__dark {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   background: rgb(36, 38, 49);
   color: #EEEEEE;
 }
 
 .container__light {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   background: #EEEEEE;
   color: rgb(36, 38, 49);
@@ -186,11 +187,65 @@ input:checked+.slider:before {
 
 /*About Section*/
 
+.about__me{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:flex-start;
+  margin-bottom:40px;
+  max-height:350px;
+}
 
+.picture{
+  min-width : 250px;
+  min-height:350px;
+  background-image : url("./images/profile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right:55px;
+  border-radius:15px;
+}
+
+.button__styled{
+  background-color:#286f62;
+  color:white;
+  border:none;
+  font-size:1.25em;
+  padding: 15px 35px;
+  border-radius: 10px;
+  border: 2px solid #286f62;
+}
+
+.button__styled:hover{
+  background:none;
+  border:solid 2px #286f62;
+  color : #286f62
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.picture__passion{
+  min-width : 250px;
+  min-height:350px;
+  background-image : url("./images/concert.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right:55px;
+  border-radius:15px;
+}
+
+.link{
+  text-decoration : none;
+  font-weight: bold;
+  color: #286f62;
+}
 
 .about__section{
   display:flex;
   flex-flow:column wrap;
+  max-width:550px;
+
 }
 
 .skills{
@@ -205,14 +260,14 @@ input:checked+.slider:before {
   display:flex;
   flex-flow:column wrap;
   justify-content: flex-start;
-  border:1px solid rgba(36,38,49,0.25);
+  border:1px solid #08FDD8;
   padding:15px;
   max-height:550px;
   border-radius:25px;
 }
 
 .languages:hover{
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 10px 0px #08FDD8;
 }
 
 .languages p{

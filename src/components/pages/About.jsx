@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 export default function About() {
   const [about, setAbout] = useState(0);
   
@@ -20,48 +21,61 @@ export default function About() {
         <h1 className="main__title">About me:</h1>
         <div className="about">
           {about === 0 ? (
+            <div className="about__me">
+            <div className="picture">
+            </div>
             <div className="about__section">
-              <div>
-              <h4 className="main__desc">My skills</h4>
-              
-              <p>I love coding and problem-solving. My skills include: 
-              </p>
+              <p>
+              Following experiences in digital communication and Marketing, I've decided to go into the technical side by learning web development.   
               <br/>
-              </div>
-              <div className="skills">
-                <div className="languages">
-                <h3 style={{marginTop:0}}>Programming languages</h3>
-                    <p className='skill__list'><i className="fab fa-react"></i> ReactJs</p>
-                    <p className='skill__list'><i className="fab fa-node-js"></i> NodeJs</p>
-                    <p className='skill__list'><i className="fab fa-js"></i> JavaScript</p>
-                    <p className='skill__list'><i className="fab fa-html5"></i> HTML</p>
-                    <p className='skill__list'><i className="fab fa-css3"></i >CSS</p>
-                    <p className='skill__list'>MongoDB</p>
-                </div>
-                    
-                <div className="languages">
-                <h3 style={{marginTop:0}}>Programming languages</h3>
-                    <p className='skill__list'><i className="fab fa-react"></i> ReactJs</p>
-                    <p className='skill__list'><i className="fab fa-node-js"></i> NodeJs</p>
-                    <p className='skill__list'></p>
-                    <p className='skill__list'><a href="https://pdfhost.io/v/sL4Vbmdsg_xavier_crespoCVpdf.pdf" target="_blank" rel="noopener noreferrer">link to my CV</a></p>
-                </div>
-              </div>
-              <p className='skill__list'><a href="https://pdfhost.io/v/sL4Vbmdsg_xavier_crespoCVpdf.pdf" target="_blank" rel="noopener noreferrer">link to my CV</a></p>  
+              <br/>
+              I am now, after graduating from the <b>Ironhack</b> bootcamp, looking for <b>my first job as a web developer</b>! 
+              <br/>
+              <br/>
+              During this experience, I've realized how much I love coding and how passionate I am about it. Organized and autonomous, I am a quick-learner who loves to work in teams. 
+              <br/>
+              <br/>
+              I love to work with front-end technologies such as <b><i className="fab fa-react"></i> ReactJs</b>. 
+              I want to learn new frameworks and languages. 
+              I'm also interested in the back-end technologies. 
+              I've worked with the <b>MongoDB</b>, <b>Postman</b>, <b>Javascript</b>, <b>NodeJs</b>, <b>Express</b>, <b>HTML</b> and <b>CSS</b>. 
+              <br/>
+              <br/>
+              For more info, check out my resume: <a href="https://pdfhost.io/v/sL4Vbmdsg_xavier_crespoCVpdf.pdf" target="_blank" rel="noopener noreferrer" className="link">Click here</a>   
+              </p>  
+            </div>
             </div>
             
           ) : (
+            <div className="about__me">
+              <div className="picture__passion">
+            </div>
             <div className="about__section">
-              <h4 className="main__desc">Web dev front and back</h4>
+              <p>
+              I've been playing music for as long as I can remember. i've started with the piano, then shifted to the guitar that I still play to this day. I've also played the bass and synth. 
+              My two current bands are:<br/>
+              <a href="https://soundcloud.com/standera" className="link">Standera</a> <br/>
+              <a href="https://soundcloud.com/user-623272561" className="link">Deaf Crisis</a>    
+              <br/>
+              <br/>
+              My other main activity is sports. I love to box (English boxing). I also run and do a bit of parkour. Ironically, I also enjoy cooking and am a true food-lover! 
+              <br/>
+              <br/>
+              All in all, I am a very passionate person, in love with the depths we can find in trivial activities. I love to listen to people and their stories, to learn from them and to find new perspectives on things I thought I knew. 
+              <br/>
+              <br/>
+              For more info, check out my resume: <a href="https://pdfhost.io/v/sL4Vbmdsg_xavier_crespoCVpdf.pdf" target="_blank" rel="noopener noreferrer" className="link">Click here</a>   
+              </p>  
+            </div>
             </div>
           )}
           <div className="buttons">
             {about !== 0 ? (
               
-              <button onClick={previous}>Previous</button>
+              <button onClick={previous} className="button__styled">Skills</button>
               
               ) : (
-                <button onClick={next}>Next</button>
+                <button onClick={next} className="button__styled">Passions</button>
             )}
           </div>
         </div>
